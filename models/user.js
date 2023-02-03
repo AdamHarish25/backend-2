@@ -20,6 +20,7 @@ module.exports = (sequelize, DataTypes) => {
     password: DataTypes.STRING,
     phone_number: DataTypes.INTEGER,
     otp: DataTypes.INTEGER,
+    deletedAt: DataTypes.TIME
   }, {
     sequelize,
     modelName: 'User',

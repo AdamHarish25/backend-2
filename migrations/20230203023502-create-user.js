@@ -27,13 +27,17 @@ module.exports = {
       otp: {
         type: Sequelize.INTEGER
       },
+      deletedAt: {
+        allowNull: false,
+        type: Sequelize.TIME
+      },
       createdAt: {
         allowNull: false,
-        type: Sequelize.DATE
+        type: Sequelize.TIME
       },
       updatedAt: {
         allowNull: false,
-        type: Sequelize.DATE
+        type: Sequelize.TIME
       }
     });
   },
