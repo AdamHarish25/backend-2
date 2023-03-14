@@ -7,6 +7,17 @@ const dotenv = require('dotenv');
 const User = Models.User;
 dotenv.config();
 
+const crypto = require('crypto');
+
+function generateOTP () {
+  const otp = crypto.randomBytes(3).toString('hex');
+  return otp.toUpperCase();
+}
+
+var otp = generateOTP();
+
+console.log(otp);
+
 /* GET users listing. */
 router.get('/', function (req, res, next) {
   res.send('respond with a resource');

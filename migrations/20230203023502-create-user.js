@@ -25,7 +25,7 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       otp: {
-        type: Sequelize.INTEGER
+        type: Sequelize.STRING
       },
       deletedAt: {
         allowNull: false,
